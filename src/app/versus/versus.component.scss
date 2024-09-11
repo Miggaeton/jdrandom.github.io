@@ -1,0 +1,48 @@
+.player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .status-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  // Color del fondo del botón
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .status-circle i {
+    font-size: 18px;
+  }
+
+  .card {
+    margin: 20px; // Ajusta este valor para aumentar o disminuir el espacio
+  }
+
+
+
+
+  .song-card {
+    background-color: yellow;  /* Fondo amarillo */
+    max-width: 300px;          /* Limitar el ancho de la tarjeta */
+    margin: 20px auto;         /* Centrar la tarjeta y darle margen */
+    border-radius: 10px;       /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombras sutiles */
+  }
+  
+  .card-body {
+    padding: 10px;             /* Reducir el padding interno */
+  }
+  
+  .card-title {
+    font-size: 1.2em;          /* Tamaño de letra más pequeño */
+    text-align: center;        /* Centrar el texto del título */
+  }
+  
+  .card-text {
+    text-align: center;        /* Centrar el texto del artista */
+    font-size: 1em;
+  }

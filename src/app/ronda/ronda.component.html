@@ -1,0 +1,9 @@
+
+        <div class="card">
+            <div *ngFor="let versus of versusList let i = index">
+                <app-versus [player1]="versus.player1" [player2]="versus.player2" [numero]="i"></app-versus>
+              </div>
+              <button class="btn btn-primary mt-3" (click)="nextRound()">Siguiente ronda</button>
+</div>
+ 
+

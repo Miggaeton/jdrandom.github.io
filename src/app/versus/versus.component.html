@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Ronda {{numero+1}}</h5>
+  
+      <!-- Player 1 -->
+      <div class="player-info">
+        <span>{{ player1.name }}</span>
+        <button [ngClass]="{'btn-success': player1.winner, 'btn-danger': !player1.winner}" class="btn status-circle" [disabled]="isActive" (click)="declareWinner(player1)">
+          <i class="bi bi-check-circle"></i>
+        </button>
+      </div>
+  
+      <!-- Player 2 -->
+      <div class="player-info">
+        <span>{{ player2.name }}</span>
+        <button [ngClass]="{'btn-success': player2.winner, 'btn-danger': !player2.winner}" class="btn status-circle" [disabled]="isActive" (click)="declareWinner(player2)">
+          <i class="bi bi-check-circle"></i>
+        </button>
+      </div>
+
+
+      <div *ngFor="let song of songs" class="card song-card" style="background-color: yellow; margin: 10px; width: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">{{ song.title }}</h5>
+          <p class="card-text">{{ song.artist }}</p>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
